@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java 17-20</title>
+</head>
+
+<body>
+  <script>
+    document.write("<h1>ARRAYS AND LOOP</h1>")
+
+    document.write("<h3>QUESTION NO:01</h3>");
+    var EmptyArray = [
+      []
+    ];
+    document.write("This question vary on empty array.");
+
+    document.write("<h3>QUESTION NO:02</h3>");
+
+
+
+    var array2D = [
+      [0, 1, 2, 3],
+      [1, 0, 1, 2],
+      [2, 1, 0, 1]
+    ];
+    document.write("without loop", "</br>", array2D, "</br>", "when apply loop", "</br>");
+    for (var i = 0; i < array2D.length; i++) {
+      for (var j = 0; j < array2D[i].length; j++) {
+        console.log(array2D[i][j]);
+        document.write(array2D[i][j]+" ")
+      }
+    };
+
+
+
+    document.write("<h3>QUESTION NO:03</h3>", "</br>", "Numeric counting from 1 to 10</br>");
+    for (let i = 1; i < 11; i++) {
+      document.write( [i]+ " " );
+
+    };
+
+
+    document.write("<h3>QUESTION NO:04</h3>");
+    var TableNo = prompt("Enter A table number you want to show");
+    TableNo = Number(TableNo);
+    var TableLenght = prompt("Enter A table lenght you want to show");
+    TableLenght = Number(TableLenght);
+    {
+      for (var j = 1; j <= TableLenght; j++) {
+        document.write(TableNo + "*" + j + "=" + TableNo * j, "</br>");
+
+
+
+      }
+
+    };
+    document.write("<h3>QUESTION NO :05</h3>");
+    var fruits = ["Apple", "Banana", "Grapes", "Kiwi", "Pineapple", "cheery"];
+    for (let i = 0; i < fruits.length; i++) {
+      document.write("</br>", "Fruits Name", "</br>", fruits[i])
+
+    };
+
+
+    document.write("<h3>QUESTION NO :06</h3>");
+    document.write("</br>a. counting</br>")
+    for (i = 1; i < 16; i++) {
+      document.write(i + ",")
+    };
+    document.write("</br>b. Reverse counting</br>");
+    for (i = 16; i >= 0; i--) {
+      document.write(i + ",")
+    };
+    document.write("</br>c. Even no:</br>");
+    for (i = 0; i < 21; i++) {
+      if (i % 2 == 0) {
+        document.write(i, ",")
+
+      }
+    };
+    document.write("</br>d. Odd no:</br>");
+    for (let i = 0; i < 20; i++) {
+      if (i % 2 !== 0) {
+        document.write(i, ",")
+
+      }
+
+    };
+    document.write("</br>e. Series:</br>");
+    for (let i = 0; i < 20; i++) {
+      if (i % 2 == 0) {
+        document.write(i, "k", ",")
+
+      }
+
+    };
+
+
+    document.write("<h3>QUESTION NO :07</h3>");
+    var cakes = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var askingcake = prompt("Welcome fresh cake bakery.what do you want to order");
+    for (let i = 0; i < cakes.length; i++);
+    if (askingcake === cakes[i]) {
+      document.write("Yes we have this item");
+
+
+
+    }
+    else {
+      document.write("</br>we don't have this item");
+
+    };
+
+
+    document.write("<h3>QUESTION NO :08</h3>");
+
+    var quan = [12,34,67,23,10];
+    for (i=0 ; i < quan.length ;i++){
+    if (quan[i] > 34) {
+      document.write(quan[i]+ " " ,"is geatest value in an array")
+      
+    }
+  };
+
+  document.write("<h3>QUESTION NO :09</h3>");
+
+  var quan1 = [12,34,67,23,10];
+    for (i=0 ; i < quan1.length ;i++){
+    if (quan[i] < 12) {
+      document.write(quan1[i] +" " ,"is Smallest value in an array")
+      
+    }
+  };
+
+
+
+
+    document.write("<h3>QUESTION NO :10</h3>");
+    var value = 5;
+    for (i = 1; i <= 20; i++) {
+      document.write(value * i, ",")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

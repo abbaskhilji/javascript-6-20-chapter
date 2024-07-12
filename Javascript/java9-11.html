@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java9-11</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h3>Question No:01</br>I done first question practically</br></h3>");
+        var city = prompt("from which city you belong");
+        if (city === "karachi") {
+            alert("Welcome to city of lights");
+            document.write("Welcome to city of lights");
+
+        };
+
+
+
+
+        document.write("<h3>Question No:02</h3></br>");
+
+        var gender = prompt("what is your gender?");
+        if (gender === "male") {
+            alert("Good Morning Sir");
+           document.write("Good Morning Sir</br>");
+
+        }
+        else {
+            alert("Welcome Ma'am ");
+            document.write("Welcome Ma'am ")
+
+        };
+
+
+
+
+        document.write("<h3>Question No :03</h3></br>");
+        var signals = prompt("What is your favourite signal color ");
+        if (signals === "red") {
+            document.write("<b>RED</b></br></br>must stop</br>")
+        };
+        if (signals === "yellow") {
+            document.write("<b>YELLOW</b></br></br>ready to move</br>")
+
+        };
+        if (
+            signals === "green"
+        ) {
+            document.write("<b>Green</b></br>move now")
+
+        };
+
+
+
+
+        document.write("<h3>QUESTION NO:04</h3>");
+        var fuel = prompt("How much fuel is remaining in your car?");
+        fuel = Number(fuel);
+        console.log((typeof fuel));
+        if (fuel < 0.25) {
+            alert("Please refill the fuel in your car")
+            document.write("Please refill the fuel in your car")
+
+        };
+
+
+
+
+        document.write("<h3>QUESTION NO:05</h3>");
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true")
+            document.write("given condition for variable a is true");
+        };
+
+
+
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+            document.write("given condition for variable b is true" +" ")
+        };
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+            document.write("condition 1 is true" +" ")
+        };
+        if (c === 13) {
+            alert("condition 2 is true");
+            document.write("condition 2 is true" +" ")
+        };
+        if (++c < 14) {
+            alert("condition 3 is true");
+            document.write("condition 3 is true" +" ")
+        };
+        if (c === 14) {
+            alert("condition 4 is true");
+            document.write("condition 4 is true" +" ")
+        };
+
+
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+            document.write("The cost equals");
+        };
+        var catheight = 10;
+        var carheight = 50;
+        if (catheight < carheight) {
+            alert("cat is smaller than car");
+            document.write("cat is smaller than car");
+
+        };
+
+
+
+
+
+        document.write("<h3>QUESTION NO:06</h3>");
+        var ObtainedMarks =prompt("what is your marks in three subject");
+        ObtainedMarks = Number(ObtainedMarks);
+
+        var Totalmarks =prompt("what is the total marks of three subject");
+        Totalmarks = Number(Totalmarks);
+        var percentage = ObtainedMarks / Totalmarks *100;
+       
+        console.log(percentage);
+       
+        if (percentage>=80) {
+            document.write("<h4>Percentage</h4></br>greater than or equal to 80</br>Grade</br>A</br>Remarks</br>Exellent</br>Total marks</br>"+Totalmarks+"</br>Marks Obtained</br>"+ObtainedMarks);
+           
+            
+        };
+        if(percentage >=70) {
+            document.write("<h4>Percentage</h4></br>greater than or equal to 70</br>Grade</br>B</br>Remarks</br>Good</br>Total marks</br>"+Totalmarks+"</br>Marks Obtained</br>"+ObtainedMarks);
+            
+
+        };
+        if(percentage >=60){
+            document.write("<h4>Percentage</h4></br>greater than or equal to 60</br>Grade</br>C</br>Remarks</br>You need to improve</br>Total marks</br>"+Totalmarks+"</br>Marks Obtained</br>"+ObtainedMarks);
+
+        };
+        if(percentage <60){
+            document.write("<h4>Percentage</h4></br>lesss than 60</br>Grade</br>Fail</br>Remarks</br>D</br>Total marks</br>"+Totalmarks+"</br>Marks Obtained</br>"+ObtainedMarks);
+
+        }
+     
+       
+
+        document.write("<h3>QUESTION NO:07</h3>");
+        var secretNo = 10;
+        var secretGuess = prompt("guess what  is the in var?");
+        secretGuess = Number(secretGuess)
+        if (secretNo === secretGuess) {
+            alert("Bingo!Correct answer");
+            document.write("Bingo!Correct answer")
+
+        };
+
+
+
+
+        document.write("<h3>QUESTION NO:08</h3>");
+        var dividing3 = prompt("give me a number for dividing with 3");
+        dividing3 = Number(dividing3);
+        var answer = dividing3 / 3;
+        console.log(answer);
+        if (dividing3 / 3) {
+            alert("this number is divisible with 3");
+            document.write("this number is divisible with 3");
+
+        };
+
+
+
+
+
+        document.write("<h3>QUESTION NO :09</h3>");
+        var checkEvenOdd = prompt("give me a number even or odd");
+        if (checkEvenOdd % 2 === 0) {
+            document.write("this no is even")
+            
+        } else {
+            document.write("this no is odd")
+            
+        };
+
+
+
+
+
+
+        document.write("<h3>QUESTION NO :10</h3>");
+        var tempreture = prompt("what is the weather right now")
+        tempreture = Number(tempreture);
+        if (tempreture >=40 ) {
+          document.write("Its very hot outside");
+        }
+         else if (tempreture>=30 ) {
+            document.write("The today weather is normal");
+            
+        }
+        else if (tempreture>=20) {
+            document.write("Today weather is cool");
+            
+        }
+         else if (tempreture>=10) {
+            document.write("OMG! Today,s weather is so cool");
+            
+        }  
+            
+        
+        if (tempreture>=30 ) {
+            document.write("The today weather is normal");
+            
+        };
+         if (tempreture>=20) {
+            document.write("Today weather is cool");
+            
+        };
+         if (tempreture<10) {
+            document.write("OMG! Today,s weather is so cool");
+            
+        };
+
+
+
+       
+        document.write("<h3>QUESTION NO:11</h3>");
+        var cal1 = prompt("first no");
+        cal1 = Number(cal1);
+
+        var cal2 = prompt("second no");
+        cal2 = Number(cal2);
+        var operation = prompt("what operation you apply on this");
+
+        var result;
+
+        switch (operation) {
+            case '+':
+                result = cal1 + cal2;
+                break;
+            case '-':
+                result = cal1 - cal2;
+                break;
+            case '*':
+                result = cal1 * cal2;
+                break;
+            case '/':
+                if (cal2 !== 0) {
+                    result = cal1 / cal2;
+                } else {
+                    result = "Cannot divide by zero";
+                }
+                break;
+            default:
+                result = "Invalid operation";
+        };
+        
+
+        console.log("Result:", result);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

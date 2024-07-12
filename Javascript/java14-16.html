@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java14-16</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h3>QUESTION NO:01</h3>");
+        document.write("ASSIGN ARRAY IN FUTURE");
+        var StudentName = [];
+        StudentName.push("Maryam", "Aliya", "Saima", "Shazia", "Anwer");
+        console.log(StudentName);
+        document.write("</br>", StudentName)
+
+        document.write("<h3>QUESTION NO:02</h3>");
+        document.write("JS OBJECT NOTATION");
+        var StudentName1 = {
+            name: []
+        };
+        StudentName1.name.push("Ayesha", "Ali", "Fatima", "Khadija");
+        console.log(StudentName1.name);
+        document.write("</br>", StudentName1.name);
+
+
+        document.write("<h3>QUESTION NO:03</h3>");
+        document.write("INITIALIZE STRING ARRAY")
+        var StringArray = ["Kiwi", "Pineapple", "Mango", "Apple", "Orange"];
+        console.log(StringArray);
+        document.writeln("</br>", StringArray);
+
+        document.write("<h3>QUESTION NO:04</h3>");
+        document.write("INITIALIZE NUMBER ARRAY");
+        var num = [1, 2, 3, 4, 5, 6];
+        document.writeln("</br>", num);
+        console.log(num);
+
+        document.writeln("<h3>QUESTION NO :05</h3>");
+        document.write("INITIALIZE A ARRAY BOOLEAN ");
+        var BooleanArray = [true, false, true];
+        document.write(BooleanArray);
+        console.log(BooleanArray);
+
+        document.write("<h3>QUESTION NO :06</h3>");
+        document.write("INTIALIZE A MIXED ARRAY");
+        var MixedArray = ["</br>", 8, true, "Ball", false, 4, [1, 2, 3], { name: "Imran", age: 14 }];
+        document.write(MixedArray);
+        console.log(MixedArray);
+
+
+        document.write("<h3>QUESTION NO :07</h3>");
+        document.write("STORE EDUCATION QUALIFICATION IN PAKISTAN IN ARRAY");
+        var Education = ["</br> 1) SSC </br>", "2) HSC </br>", "3) BSC </br>", "4) BS </br>", "5) BCOM </br>", "6) MS </br>", "7) M.Phil </br>", "8) PhD </br>"]
+        document.write(Education);
+        console.log(Education);
+
+
+        document.write("<h3>QUESTION NO :08</h3>");
+        var Score = ["ALI", "HASSAN", "HUSSAIN"];
+        var no = [423, 300, 250];
+
+        for (var i = 0; i < Score.length; i++) {
+            console.log(`${Score[i]} scored ${no[i]} out of 500 Percentage ` + no[i] / 500 * 100);
+            document.write(`${Score[i]} scored ${no[i]} out of 500 Percentage ` + + no[i] / 500 * 100 + "</br>")
+        };
+
+
+
+        document.write("<h3>QUESTION NO :09 =Part A</h3>");
+        var color = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(color + "</br>");
+        var AskAnyColor = prompt("what color do you want to add in the begining of an array");
+        color.unshift(AskAnyColor);
+        document.write(color);
+
+
+        document.write("<h3>QUESTION NO:09 =Part B</h3>");
+        var color1 = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(color1 + "</br>")
+        var AskAnyColor1 = prompt("what color do you want to add in the end of an array");
+        color1.push(AskAnyColor1);
+        document.write(color1);
+
+
+
+        document.write("<h3>QUESTION NO:09 =Part C</h3>");
+        var Adding = ["purple", "yellow", "pink", "orange", "grey"];
+        Adding.splice(0, 0, "red ", "silver");
+        document.write(Adding);
+
+
+        document.write("<h3>QUESTION NO:09 =Part D</h3>");
+        var remove = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(remove + "</br>");
+        remove.shift();
+        document.write(remove);
+
+
+
+        document.write("<h3>QUESTION NO:09 =Part E</h3>");
+        var RemoveFir = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(RemoveFir + "</br>");
+        RemoveFir.pop();
+        document.write(RemoveFir);
+
+
+        document.write("<h3>QUESTION NO:09 =Part F</h3>");
+        var addfir = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(addfir + "</br>")
+        var question = prompt("at which index you want to add color");
+        question = Number(question);
+        addfir[question] = "blue";
+        document.write(addfir);
+
+
+
+        document.write("<h3>QUESTION NO:09 =Part G</h3>");
+        var cut = ["purple", "yellow", "pink", "orange", "grey"];
+        document.write(cut + "</br>")
+        var query1 = prompt("from which index no you want to delete");
+        query1 = Number(query1)
+        var query2 = prompt("how many elements you want to delate");
+        query2 = Number(query2)
+        cut.splice(query1, query2);
+        if (query1 < 0 || query1 >= cut.lenght || query2 < 0 || query2 >= cut.length) {
+            alert("invalid input. Please enter valid index")
+
+        }
+        else {
+            document.write(cut)
+
+        }
+
+
+        document.write("<h3>QUESTION NO:10</h3>");
+        var marks = [120, 320, 480, 230];
+        document.write("Original Score", marks, "</br>");
+        marks.sort();
+        document.write("Sorted score (ascending order)", marks);
+
+
+
+        document.write("<h3>QUESTION NO:11</h3>");
+        var citiesName = ["Karachi", "Lahore", "Islamabad", "Punjab", "KPK"];
+        document.write("Cities Name</br>", citiesName);
+        var SelectedCities = [];
+        SelectedCities = citiesName.slice(1, 3);
+        document.write("</br>After Copy</br>", SelectedCities);
+
+
+
+        document.write("<h3>QUESTION NO:12</h3>");
+        var singleString = [" This ", " is ", " my ", " house </br>"];
+        document.write(singleString);
+        var CompleString = singleString.join('');
+        document.write(CompleString);
+
+
+
+       
+
+
+      
+
+
+
+
+        document.write("<h3>QUESTION NO:15</h3>");
+        var phoneManufacturers = [
+            "Apple",
+            "Samsung",
+            "Motorola",
+            "Nokia",
+            "Sony",
+            "Haier"
+        ];
+
+
+        document.write('<select id="phoneDropdown">');
+
+        for (var i = 0; i < phoneManufacturers.length; i++) {
+            document.write('<option value="' + phoneManufacturers[i] + '">' + phoneManufacturers[i] + '</option>');
+        };
+        document.write('</select');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

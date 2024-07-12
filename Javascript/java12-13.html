@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java12-13</title>
+</head>
+
+<body>
+    <script>
+        var UpperLower = prompt("enter any character number or string");
+        var charcode = UpperLower.charCodeAt(0);
+        if (charcode >= 48 && charcode <= 57) {
+            console.log(UpperLower + "" + "is a number");
+        }
+        else if (charcode >= 65 && charcode <= 90) {
+            console.log(UpperLower + "" + "is an uppercase letter");
+        }
+        else if (charcode >= 97 && charcode <= 122) {
+            console.log(UpperLower + "" + "is an lowercase letter");
+
+        }
+
+
+
+
+
+        var num1 = parseInt(prompt("enter the first integer"));
+        var num2 = parseInt(prompt("Enter the second integar"));
+        if (num1 > num2) {
+            console.log(num1 + " is larger than " + num2);
+
+        }
+        else if (num2 > num1) {
+            console.log(num2 + " is larger than " + num1);
+        }
+        else {
+            console.log(num1 + " and " + num2 + " are equal.");
+        }
+
+
+
+
+
+
+        var number = prompt("Enter a number:");
+        number = parseFloat(number);
+        if (number > 0) {
+            console.log("The number is positive");
+
+        }
+        else if (number < 0) {
+            console.log("The number is negative");
+        }
+        else {
+            console.log("The number is zero");
+        }
+
+
+
+
+
+
+        var vowels = prompt("enter any one vowel");
+        if (vowels === "a" || vowels === "e" || vowels === "i" || vowels === "0" || vowels === "u") {
+            console.log("true");
+        }
+        else {
+            console.log("False");
+        }
+
+
+
+
+        var password = "fifi@#360";
+        var PasswordCheck = prompt("enter a password");
+        if (PasswordCheck === "") {
+            alert("Enter your password")
+
+        }
+        else if (PasswordCheck === password) {
+            alert("Correct! Password")
+        }
+
+
+
+
+
+
+        var hour = 12;
+        if (hour < 12) {
+            alert("Good day")
+        }
+        else {
+            alert("Good evening")
+        }
+
+
+
+        var asktime = prompt("enter a current time")
+
+        if (asktime < 0 || asktime > 24) {
+            alert(" invalid input .please enter a time b/w 00:00 and 23:59")
+        }
+        else if(asktime>0 && asktime<=24){
+            alert("valid time")
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 6 to 9</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h2>Question no = 01 </h2><br>");
+        for (var i = 4; i < 10; i++) {
+            document.write(`the  number changes to =${i} <br> then <br>`
+
+            )
+        };
+        document.write("<h3>Second Part</h3>")
+        for (var a = 10; a >= 4; a--) {
+            document.write(`the  number changes to =${a} <br> then <br>`)
+
+        };
+        document.write("<h3>Question no =03</h3><br>");
+        var name = prompt("what is your name", "Username");
+        alert("welcome\n" + name + "\nto this website")
+        document.write("I have done my work in alert and prompt");
+
+        var a = 4;
+        var b = 4;
+        var c = --a;
+        var d = --b;
+        console.log(c);
+        console.log(d);
+        var e = c - d;
+        console.log(e);
+        var f = ++b;
+        console.log(f);
+        var j = e + f;
+        console.log(j);
+
+
+
+        document.write("<h3>Question No =05</h3>");
+        var age = prompt("what is your age", 5);
+        for (i = 1; i < 11; i++) {
+            document.write(age + "*" + i + "=" + age * i, "</br>");
+            console.log(age + "*" + i + "=" + age * i, "</br>");
+
+        };
+        document.write("<h3>QUESTION NO =06</h3>");
+        var sub1 = prompt("in which sub you got higher marks");
+        var sub2 = prompt("and i  which sub you got good marks");
+        var sub3 = prompt("and in which subyou got low marks");
+        var TotalMarks = 100;
+        var marks = prompt("how many marks you got in first subject");
+        var marks1 = prompt("how many marks you got in sec subject");
+        var marks3 = prompt("how many marks you got in third subject");
+        var per1 = marks / TotalMarks * 100;
+        var per2 = marks1 / TotalMarks * 100;
+        var per3 = marks3 / TotalMarks * 100;
+
+        document.write(sub1 + "<h3> ENGLISH TOTAL MARKS</h3>" + TotalMarks + "<h3>OBTAINED MARKS</h3>" + marks + "<h3>PERCENTAGE</h3>" + per1 + "%","</br>");
+        document.write(sub2 + "<h3> URDU TOTAL MARKS</h3>" + TotalMarks + "<h3>OBTAINED MARKS</h3>" + marks1 + "<h3>PERCENTAGE</h3>" + per2 + "%","</br>");
+        document.write(sub3 + "<h3> MATHS TOTAL MARKS</h3>" + TotalMarks + "<h3>OBTAINED MARKS</h3>" + marks3 + "<h3>PERCENTAGE</h3>" + per3 + "%")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
